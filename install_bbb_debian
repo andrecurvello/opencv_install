@@ -33,12 +33,12 @@ apt-get -y clean
 
 cd $DIR0
 
-# if [ -d $DIR1 ]; then
-#     rm -r $DIR1
-#     echo "Old opencv directory removed"
-# fi
-#
-# git clone https://github.com/Itseez/opencv.git
+if [ -d $DIR1 ]; then
+    rm -r $DIR1
+    echo "Old opencv directory removed"
+fi
+
+git clone https://github.com/Itseez/opencv.git
 cd opencv
 
 if [ -d $DIR2 ]; then
